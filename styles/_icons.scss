@@ -1,0 +1,10 @@
+
+@mixin icon ($url) {
+    background-image: url($url); 
+    background-repeat: no-repeat;
+};  
+.search-icon {
+    @include icon("../assets/svg/search-icon.svg"); 
+      width: 17.35px;
+      height: 18px;
+}
