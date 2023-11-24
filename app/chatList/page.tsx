@@ -1,12 +1,12 @@
-import CahtListHeader from "@/components/CahtListHeader";
+import ChatListHeader from "@/components/chat-list/ChatListHeader";
 import MainContainer from "@/components/ToggleTabContainer";
 import React from "react";
 
 const ChatList = () => {
   return (
-    <div>
+    <div className="c">
       <MainContainer>
-        <CahtListHeader />
+        <ChatListHeader />
       </MainContainer>
     </div>
   );

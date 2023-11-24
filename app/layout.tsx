@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "../styles/globals.scss";
-import CahtListHeader from "@/components/CahtListHeader";
+import ChatListHeader from "@/components/chat-list/ChatListHeader";
 // import MainContainer from "@/components/MainContainer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,11 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {/* <MainContainer> */}
-        {children}
-        {/* </MainContainer> */}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }

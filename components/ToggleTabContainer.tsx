@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import ChatList from "@/components/ChatList";
-import CallList from "@/components/CallList";
+import ChatList from "@/components/chat-list/ChatList";
+import CallList from "@/components/call-list/CallList";
 import { usePathname } from "next/navigation";
 
 type Props = {
