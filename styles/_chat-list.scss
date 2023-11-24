@@ -72,3 +72,38 @@ padding: 0 60px;
 }
 }
 }
+
+.chat-list {
+    display: flex;
+
+    &:hover {
+        background-color: $light-gray;
+ }
+    .chat-list-item {
+        cursor: pointer;
+        align-items: center;
+        padding: 10px 20px;
+        flex-grow: 1;
+        display: flex;
+      
+        .chat-list-title {
+            font-weight: 500;
+            color: $dark-gray;
+       
+        }  
+        .chat-list-caption {
+            font-weight: 400;
+            color: $dark-gray;
+            font-size: 12px;
+       
+        }   
+      
+    }
+  
+    .chat-list-time {
+      font-weight: 400;
+      color: $dark-gray;
+      width: 20%;
+      padding: 10px 0px;
+    } 
+}
