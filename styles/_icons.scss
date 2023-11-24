@@ -8,3 +8,25 @@
       width: 17.35px;
       height: 18px;
 }
+.chat-icon {
+    @include icon("../assets/svg/chat-icon.svg"); 
+      width:  24px;
+      height: 26px;
+      display: block;
+      
+}
+
+.contacts-icon {
+    @include icon("../assets/svg/contacts-icon.svg"); 
+      width: 24px;
+      height: 24px;
+      display: block;
+      
+}
+.settings-icon {
+    @include icon("../assets/svg/settings-icon.svg"); 
+      width: 22px;
+      height: 23.28px;
+      display: block;
+      
+}
