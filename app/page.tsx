@@ -1,9 +1,9 @@
-import CahtListHeader from "@/components/CahtListHeader";
+import ChatList from "./chatList/page";
 
 export default function Home() {
   return (
     <main>
-      <CahtListHeader />
+      <ChatList />
     </main>
   );
 }

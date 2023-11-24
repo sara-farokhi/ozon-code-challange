@@ -2,7 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    
 }
+ul,li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    a {
+        text-decoration: none;
+    }
+}
+
 .header-container {
     border-radius: 0px 0px 20px 20px;
     background: $primary-color;
