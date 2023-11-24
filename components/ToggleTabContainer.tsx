@@ -13,7 +13,11 @@ const ToggleTabContainer = ({ children }: Props): React.ReactNode => {
   return (
     <div>
       {children}
-      {pathname && pathname === "/chatList" ? <ChatList /> : <CallList />}
+      {(pathname && pathname === "/chatList") || pathname === "/" ? (
+        <ChatList />
+      ) : (
+        <CallList />
+      )}
     </div>
   );
 };
