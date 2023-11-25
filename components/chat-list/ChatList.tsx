@@ -24,6 +24,18 @@ const getCalls = async () => {
 
 const ChatList = async () => {
   const data: chat[] = await getCalls();
+
+  let test = data.map((x, i) => {
+    if (i % 3 === 0) {
+      return { ...x, sender: true };
+    } else {
+      return {
+        ...x,
+        sender: false,
+      };
+    }
+  });
+  console.log(test);
   const chats = data.slice(0, 4);
   return <>{chats && chats.map((chat) => <ChatItem chatProps={chat} />)}</>;
 };
