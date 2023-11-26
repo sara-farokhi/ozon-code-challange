@@ -41,6 +41,15 @@
     display: block;
     cursor: pointer;  
 }
+.arrow-back-outline-icon {
+  @include icon("../assets/svg/arrow-back-outline-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+    display: block;
+    cursor: pointer;  
+}
+
 
 .call-icon {
   @include icon("../assets/svg/call-icon.svg"); 
@@ -49,14 +58,6 @@
     display: block;
     cursor: pointer;  
 }
-.camera-icon {
-  @include icon("../assets/svg/camera-icon.svg"); 
-    width: 25px;
-    height: 25px;
-    display: block;
-    cursor: pointer;  
-}
-
 .camera-icon {
   @include icon("../assets/svg/camera-icon.svg"); 
     width: 25px;
@@ -111,6 +112,10 @@
     display: block;
     cursor: pointer;  
 }
+
+
+
+
 
 
 
