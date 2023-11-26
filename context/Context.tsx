@@ -4,7 +4,6 @@ import { createContext, useState } from "react";
 import { chat } from "@/types";
 
 const add = (a: chat): void => {};
-
 const message: chat = {
   albumId: 1,
   id: 1,
@@ -14,8 +13,11 @@ const message: chat = {
 };
 const messages: chat[] = [];
 const Context = createContext({ add, message, messages });
+type Props = {
+  children?: React.ReactNode;
+};
 
-export const Provider = ({ children }: any) => {
+export const Provider = ({ children }: Props) => {
   const [message, setMessage] = useState<chat>({
     albumId: 1,
     id: 1,

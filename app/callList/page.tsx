@@ -1,13 +1,13 @@
 import ChatListHeader from "@/components/chat-list/ChatListHeader";
-import MainContainer from "@/components/ToggleTabContainer";
+import ToggleTabContainer from "@/components/ToggleTabContainer";
 import React from "react";
 
 const callList = () => {
   return (
     <div>
-      <MainContainer>
+      <ToggleTabContainer>
         <ChatListHeader />
-      </MainContainer>
+      </ToggleTabContainer>
     </div>
   );
 };
