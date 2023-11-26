@@ -6,13 +6,15 @@ import { useParams } from "next/navigation";
 const ChatPageHeader = ({ chats }: chats) => {
   const params = useParams();
   const id = params.id;
-  console.log(typeof id);
   const chatInfo = chats?.find((chat) => chat.id.toString() == id);
-  console.log(chatInfo);
+
   return (
     <div className="header-container">
       <div className="chat-search-container">
-        <div>ChatPageHeader</div>
+        <div className="chat-page-header-details">
+          <div className="chat-page-header-info"></div>
+          <div className="chat-page-header-icons"></div>
+        </div>
       </div>
     </div>
   );

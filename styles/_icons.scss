@@ -34,10 +34,83 @@
       
 }
 
-.new-chat {
+.new-chat-icon {
   @include icon("../assets/svg/new-chat.svg"); 
     width: 25px;
     height: 25px;
     display: block;
     cursor: pointer;  
 }
+
+.call-icon {
+  @include icon("../assets/svg/call-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+.camera-icon {
+  @include icon("../assets/svg/camera-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+
+.camera-icon {
+  @include icon("../assets/svg/camera-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+
+.camera-icon {
+  @include icon("../assets/svg/mobile-hamburger-menu-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+.attachment-icon {
+  @include icon("../assets/svg/attachment-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+
+.attachment-icon {
+  @include icon("../assets/svg/attachment-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+
+.send-icon {
+  @include icon("../assets/svg/send-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+
+.smile-emo-icon {
+  @include icon("../assets/svg/smile-emo-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+
+.video-icon {
+  @include icon("../assets/svg/video-icon.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}
+
+
+
