@@ -7,12 +7,19 @@
     background-color: $light-primary-color;
     z-index: 0;
     background-image: url('../assets/svg/chat-page-background.svg'); 
+    // padding: 
 }
 .load-more {
     @extend  .relative-position
 }
 .messages-list {
-    @extend .relative-position
+    @extend .relative-position;
+    .message-item {
+     background-color: $medium-primary-color;
+     border-radius: 16px;
+     padding: 9px 12px;
+     margin: 8px 0;
+    }
 }
 .chat-page-header-details {
     display: flex;
@@ -30,7 +37,6 @@
         align-items: center;  
     }
     &>.chat-page-header-info {
-        
         width: 35%;
         &>.chat-page-header-info-title {
             font-weight: 500;
@@ -39,5 +45,6 @@
         }
     }
 }
+
 
 

@@ -3,10 +3,10 @@ import Footer from "../footer/Footer";
 
 const CallList = async () => {
   return (
-    <div>
-      CallList
+    <>
+      <div className="main-container">CallList</div>
       <Footer />
-    </div>
+    </>
   );
 };
 

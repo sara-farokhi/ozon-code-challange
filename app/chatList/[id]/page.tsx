@@ -6,10 +6,12 @@ import AddMessage from "@/components/chat-page/AddMessage";
 const Chat = async () => {
   const chats = await fetchChats();
   return (
-    <div>
-      <ChatPage chats={chats} />
-      <AddMessage />
-    </div>
+    <>
+      <div>
+        <ChatPage chats={chats} />
+        <AddMessage />
+      </div>
+    </>
   );
 };
 

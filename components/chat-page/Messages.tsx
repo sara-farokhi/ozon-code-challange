@@ -12,7 +12,7 @@ const Messages = ({ chats }: chats) => {
       <>
         {chats ? (
           chats.map((chat) => (
-            <div key={chat.id}>
+            <div key={chat.id} className="message-item">
               <div>{chat.title}</div>
             </div>
           ))
@@ -22,7 +22,7 @@ const Messages = ({ chats }: chats) => {
           </div>
         )}
         {messages.map((chat) => (
-          <div key={chat.id}>
+          <div key={chat.id} className="message-item">
             <div>{chat.title}</div>
           </div>
         ))}

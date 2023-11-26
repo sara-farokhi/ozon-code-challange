@@ -41,8 +41,10 @@ const ChatList = async () => {
   const chats = data.slice(0, 4);
   return (
     <>
-      {chats && chats.map((chat) => <ChatItem chatProps={chat} />)}
-      <AddNewChat />
+      <div className="main-container">
+        {chats && chats.map((chat) => <ChatItem chatProps={chat} />)}
+        <AddNewChat />
+      </div>
       <Footer />
     </>
   );
