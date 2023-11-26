@@ -25,9 +25,6 @@ export function LoadMoreMessages() {
   useEffect(() => {
     window.onscroll = () => {
       if (window.scrollY === 0) {
-        setTimeout(() => {
-          window.scrollBy(0, 1000);
-        }, 2000);
         loadMore();
       }
     };

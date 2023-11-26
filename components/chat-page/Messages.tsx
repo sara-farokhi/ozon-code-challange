@@ -6,13 +6,23 @@ import Context from "@/context/Context";
 
 const Messages = ({ chats }: chats) => {
   const { messages } = useContext(Context);
-
+  const sendRecieveMockChat = chats!.map((chat, i) => {
+    if (i % 3 === 0) {
+      return { ...chat, sender: true };
+    } else {
+      return { ...chat, sender: false };
+    }
+  });
+  console.log(sendRecieveMockChat);
   return (
     <div className="messages-list">
       <>
-        {chats ? (
-          chats.map((chat) => (
-            <div key={chat.id} className="message-item">
+        {sendRecieveMockChat ? (
+          sendRecieveMockChat.map((chat) => (
+            <div
+              key={chat.id}
+              className={chat.sender ? "message-item sender" : "message-item"}
+            >
               <div>{chat.title}</div>
             </div>
           ))

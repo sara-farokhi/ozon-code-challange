@@ -18,7 +18,11 @@
      background-color: $medium-primary-color;
      border-radius: 16px;
      padding: 9px 12px;
-     margin: 8px 0;
+     margin-top: 8px ;
+     margin-bottom: 8px ;
+     max-width: 80%;
+    //  margin-left: auto;
+    
     }
 }
 .chat-page-header-details {
@@ -44,6 +48,9 @@
             color: $skeleton-white;
         }
     }
+}
+.sender {
+    margin-left: auto;
 }
 
 
