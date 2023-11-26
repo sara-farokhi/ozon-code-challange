@@ -18,11 +18,20 @@
 }
 .chat-page-header-details {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    &>.chat-page-header-info,  &>.chat-page-header-icons {
-        display: flex;
+    margin-bottom: 25px;
+    &>.chat-page-header-icons,  &>.chat-page-header-info {
+        display: flex;  
         align-items: center;
+        justify-content: space-between; 
+    }
+    &>.chat-page-header-icons{
+        width: 30%;  
+    }
+    &>.chat-page-header-info{
+        width: 35%;  
     }
 }
 

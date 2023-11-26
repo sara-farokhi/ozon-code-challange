@@ -35,7 +35,7 @@
 }
 
 .new-chat-icon {
-  @include icon("../assets/svg/new-chat.svg"); 
+  @include icon("../assets/svg/new-chat-icon.svg"); 
     width: 25px;
     height: 25px;
     display: block;
@@ -65,7 +65,7 @@
     cursor: pointer;  
 }
 
-.camera-icon {
+.mobile-hamburger-menu-icon {
   @include icon("../assets/svg/mobile-hamburger-menu-icon.svg"); 
     width: 25px;
     height: 25px;
