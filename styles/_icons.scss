@@ -2,6 +2,7 @@
 @mixin icon ($url) {
     background-image: url($url); 
     background-repeat: no-repeat;
+    background-position: center;
 };  
 .search-icon {
     @include icon("../assets/svg/search-icon.svg"); 
@@ -45,7 +46,6 @@
   @include icon("../assets/svg/arrow-back-outline-icon.svg"); 
     width: 25px;
     height: 25px;
-    margin-top: 8px;
     display: block;
     cursor: pointer;  
 }
@@ -60,9 +60,11 @@
 }
 .camera-icon {
   @include icon("../assets/svg/camera-icon.svg"); 
+
     width: 25px;
     height: 25px;
-    display: block;
+    display: flex;
+ 
     cursor: pointer;  
 }
 

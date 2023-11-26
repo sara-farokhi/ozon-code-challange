@@ -3,6 +3,7 @@ import { chats } from "@/types";
 import Messages from "./Messages";
 import { LoadMoreMessages } from "./LoadMoreChats";
 import ChatPageHeader from "@/components/chat-page/ChatPageHeader";
+import AddMessage from "@/components/chat-page/AddMessage";
 
 const ChatPage = ({ chats }: chats) => {
   return (
@@ -13,6 +14,7 @@ const ChatPage = ({ chats }: chats) => {
         <Messages chats={chats} />
         <div className="chat-page-background"></div>
       </div>
+      <AddMessage />
     </>
   );
 };
