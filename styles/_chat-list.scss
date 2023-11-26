@@ -106,3 +106,17 @@ padding: 15px 60px;
       }  
   
 }
+
+.new-chat-container {
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ background-color: $primary-color;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: absolute;
+ top: 75%;
+ left: 75%;
+}
+

@@ -33,3 +33,11 @@
       cursor: pointer;
       
 }
+
+.new-chat {
+  @include icon("../assets/svg/new-chat.svg"); 
+    width: 25px;
+    height: 25px;
+    display: block;
+    cursor: pointer;  
+}

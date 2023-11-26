@@ -1,6 +1,7 @@
 import React from "react";
 import ChatItem from "./ChatItem";
 import Footer from "../footer/Footer";
+import AddNewChat from "./AddNewChat";
 
 interface chat {
   albumId: number;
@@ -41,6 +42,7 @@ const ChatList = async () => {
   return (
     <>
       {chats && chats.map((chat) => <ChatItem chatProps={chat} />)}
+      <AddNewChat />
       <Footer />
     </>
   );
