@@ -1,11 +1,7 @@
 import React from "react";
+import { footerItem } from "@/types";
 
-interface Props {
-  name: string;
-  caption: string;
-}
-
-const FooterItem = ({ name, caption }: Props) => {
+const FooterItem = ({ name, caption }: footerItem) => {
   return (
     <div className="footer-item">
       <i className={`${name}`}></i>

@@ -1,10 +1,6 @@
 import React from "react";
 import FooterItem from "./FooterItem";
-
-interface footerItem {
-  name: string;
-  caption: string;
-}
+import { footerItem } from "@/types";
 
 const Footer = () => {
   const FooterItems: footerItem[] = [

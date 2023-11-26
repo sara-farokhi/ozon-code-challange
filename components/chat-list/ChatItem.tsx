@@ -1,18 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { chatObject } from "@/types";
 
-interface chat {
-  chatProps: {
-    albumId: number;
-    id: number | string;
-    thumbnailUrl: string;
-    title: string;
-    url: string;
-  };
-}
-
-const ChatItem = ({ chatProps }: chat) => {
+const ChatItem = ({ chatProps }: chatObject) => {
   return (
     <Link href={`/chatList/${chatProps.id}`}>
       <div

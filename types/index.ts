@@ -10,4 +10,17 @@ export interface chats {
   chats: chat[] | null;
 }
 
-// export type chats = chat[] | null;
+export interface footerItem {
+  name: string;
+  caption: string;
+}
+
+export interface chatObject {
+  chatProps: {
+    albumId: number;
+    id: number | string;
+    thumbnailUrl: string;
+    title: string;
+    url: string;
+  };
+}

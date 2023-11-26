@@ -2,14 +2,7 @@ import React from "react";
 import ChatItem from "./ChatItem";
 import Footer from "../footer/Footer";
 import AddNewChat from "./AddNewChat";
-
-interface chat {
-  albumId: number;
-  id: number;
-  thumbnailUrl: string;
-  title: string;
-  url: string;
-}
+import { chat } from "@/types";
 
 const getCalls = async () => {
   const resApi = await fetch("https://jsonplaceholder.typicode.com/photos", {
