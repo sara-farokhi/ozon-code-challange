@@ -15,11 +15,11 @@ export function LoadMoreMessages() {
 
   const loadMore = async () => {
     // Once the page 8 is reached repeat the process all over again.
-    await delay(2000);
-    const nextPage = (page % 7) + 1;
-    const newMessages = (await fetchChats()) ?? [];
-    setChats((prevMessages: chat[]) => [...prevMessages, ...newMessages]);
-    setPage(nextPage);
+    // await delay(2000);
+    // const nextPage = (page % 7) + 1;
+    // const newMessages = (await fetchChats()) ?? [];
+    // setChats((prevMessages: chat[]) => [...prevMessages, ...newMessages]);
+    // setPage(nextPage);
   };
 
   useEffect(() => {
@@ -35,7 +35,7 @@ export function LoadMoreMessages() {
 
   return (
     <>
-      <div className="flex justify-center items-center p-4 col-span-1 sm:col-span-2 md:col-span-3">
+      <div className="load-more">
         <h1>Loading....</h1>
       </div>
       <Messages chats={chats} />

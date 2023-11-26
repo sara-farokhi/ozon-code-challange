@@ -1,0 +1,20 @@
+
+
+.chat-page-background{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $light-primary-color;
+    z-index: 0;
+    background-image: url('../assets/svg/chat-page-background.svg'); 
+}
+.load-more {
+    @extend  .relative-position
+}
+.messages-list {
+    @extend .relative-position
+}
+
+

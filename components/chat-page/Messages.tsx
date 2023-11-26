@@ -8,7 +8,7 @@ const Messages = ({ chats }: chats) => {
   const { messages } = useContext(Context);
 
   return (
-    <div>
+    <div className="messages-list">
       <>
         {chats ? (
           chats.map((chat) => (
