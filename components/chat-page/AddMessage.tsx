@@ -16,8 +16,8 @@ const AddMessage = () => {
       title: val,
       url: "",
     };
-
     add(newMessage);
+    setVal("");
   };
 
   return (

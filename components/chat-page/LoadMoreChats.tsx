@@ -8,8 +8,9 @@ import Messages from "./Messages";
 
 export function LoadMoreMessages() {
   const [chats, setChats] = useState<chat[]>([]);
-  const [loading, setLoading] = useState<Boolean>(true);
+  const [loading, setLoading] = useState<Boolean>(false);
   const [page, setPage] = useState(1);
+  const [display, setDisplay] = useState("none");
 
   const delay = (ms: number) =>
     new Promise((resolve) => {
@@ -32,9 +33,20 @@ export function LoadMoreMessages() {
     window.onscroll = () => {
       if (window.scrollY === 0) {
         loadMore();
+        setDisplay("block");
       }
     };
   }, []);
+
+  const windowHeight = document.documentElement.scrollHeight;
+
+  const handelElevator = () => {
+    window.scroll({
+      top: windowHeight,
+      behavior: "smooth",
+    });
+    setDisplay("none");
+  };
 
   return (
     <>
@@ -44,6 +56,13 @@ export function LoadMoreMessages() {
         </div>
       )}
       <Messages chats={chats} />
+      <div
+        className="elevator"
+        style={{ display: `${display}` }}
+        onClick={() => {
+          handelElevator();
+        }}
+      ></div>
     </>
   );
 }

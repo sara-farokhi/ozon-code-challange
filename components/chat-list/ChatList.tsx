@@ -27,7 +27,7 @@ const getCalls = async () => {
 const ChatList = async () => {
   const data: chat[] = await getCalls();
 
-  let test = data.map((x, i) => {
+  let ELevator = data.map((x, i) => {
     if (i % 3 === 0) {
       return { ...x, sender: true };
     } else {

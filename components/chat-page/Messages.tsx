@@ -13,7 +13,6 @@ const Messages = ({ chats }: chats) => {
       return { ...chat, sender: false };
     }
   });
-  console.log(sendRecieveMockChat);
   return (
     <div className="messages-list">
       <>
