@@ -1,9 +1,8 @@
 "use client";
-
 import { createContext, useState } from "react";
 import { chat } from "@/types";
 
-const add = (a: chat): void => {};
+const addNewMessage = (a: chat): void => {};
 const message: chat = {
   albumId: 1,
   id: 1,
@@ -12,7 +11,7 @@ const message: chat = {
   url: "",
 };
 const messages: chat[] = [];
-const Context = createContext({ add, message, messages });
+const Context = createContext({ addNewMessage, message, messages });
 type Props = {
   children?: React.ReactNode;
 };
@@ -26,12 +25,12 @@ export const Provider = ({ children }: Props) => {
     url: "",
   });
   const [messages, setMessages] = useState<chat[]>([]);
-  const add = (a: chat): void => {
+  const addNewMessage = (a: chat): void => {
     setMessages([...messages, a]);
   };
 
   return (
-    <Context.Provider value={{ add, message, messages }}>
+    <Context.Provider value={{ addNewMessage, message, messages }}>
       {children}
     </Context.Provider>
   );

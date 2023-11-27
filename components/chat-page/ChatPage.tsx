@@ -1,10 +1,8 @@
-import React from "react";
 import { chats } from "@/types";
 import Messages from "./Messages";
 import { LoadMoreMessages } from "./LoadMoreChats";
 import ChatPageHeader from "@/components/chat-page/ChatPageHeader";
 import AddMessage from "@/components/chat-page/AddMessage";
-// import ELevator from "../Elevator";
 
 const ChatPage = ({ chats }: chats) => {
   return (

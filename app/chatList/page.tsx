@@ -1,7 +1,5 @@
 import ChatListHeader from "@/components/chat-list/ChatListHeader";
 import MainContainer from "@/components/ToggleTabContainer";
-import React from "react";
-
 const ChatList = () => {
   return (
     <div>

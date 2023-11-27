@@ -1,4 +1,3 @@
-import React from "react";
 import ChatSearchBar from "./ChatListSearch";
 import ChatTabs from "./ChatTabs";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import FooterItem from "./FooterItem";
 import { footerItem } from "@/types";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import ChatItem from "./ChatItem";
 import Footer from "../footer/Footer";
 import AddNewChat from "./AddNewChat";
@@ -19,18 +18,6 @@ const getCalls = async () => {
 
 const ChatList = async () => {
   const data: chat[] = await getCalls();
-
-  let ELevator = data.map((x, i) => {
-    if (i % 3 === 0) {
-      return { ...x, sender: true };
-    } else {
-      return {
-        ...x,
-        sender: false,
-      };
-    }
-  });
-
   const chats = data.slice(0, 4);
   return (
     <>

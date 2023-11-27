@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
-import { chats } from "@/types";
 import { useContext } from "react";
+import { chats } from "@/types";
 import Context from "@/context/Context";
 
 const Messages = ({ chats }: chats) => {
   const { messages } = useContext(Context);
+
+  // this function is to seprate sender from reciever as mock data for ui
   const sendRecieveMockChat = chats!.map((chat, i) => {
     if (i % 3 === 0) {
       return { ...chat, sender: true };
@@ -26,10 +27,10 @@ const Messages = ({ chats }: chats) => {
             </div>
           ))
         ) : (
-          <div className="text-xl font-bold">
-            There is no conversion here lets have some
-          </div>
+          <div>There is no conversion here lets have some</div>
         )}
+
+        {/* this part is to show add function without api and it is just a mock only for ui */}
         {messages.map((chat) => (
           <div key={chat.id} className="message-item">
             <div>{chat.title}</div>

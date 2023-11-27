@@ -1,4 +1,3 @@
-import React from "react";
 import { footerItem } from "@/types";
 
 const FooterItem = ({ name, caption }: footerItem) => {

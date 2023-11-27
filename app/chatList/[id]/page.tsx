@@ -1,5 +1,4 @@
 import { fetchChats } from "@/actions/fetch-messages";
-import React from "react";
 import ChatPage from "@/components/chat-page/ChatPage";
 
 const Chat = async () => {

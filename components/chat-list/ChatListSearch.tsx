@@ -1,5 +1,3 @@
-import React from "react";
-
 const ChatSearchBar = () => {
   return (
     <div className="chat-search-input-container">

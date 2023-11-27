@@ -1,23 +1,20 @@
 "use client";
-import React from "react";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Context from "@/context/Context";
-import { useContext } from "react";
 
 const AddMessage = () => {
-  const [val, setVal] = useState("");
-
-  const { add } = useContext(Context);
-  const addVal = () => {
+  const [message, setMessage] = useState("");
+  const { addNewMessage } = useContext(Context);
+  const addMessageValue = () => {
     const newMessage = {
       albumId: 1,
       id: 1,
       thumbnailUrl: "",
-      title: val,
+      title: message,
       url: "",
     };
-    add(newMessage);
-    setVal("");
+    addNewMessage(newMessage);
+    setMessage("");
   };
 
   return (
@@ -30,8 +27,8 @@ const AddMessage = () => {
             type="text"
             className="chat-search-input"
             placeholder="Message"
-            value={val}
-            onChange={(e) => setVal(e.target.value)}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           />
           <div className="add-new-message-icon-wrapper">
             <i className="attachment-icon" />
@@ -39,7 +36,7 @@ const AddMessage = () => {
           </div>
         </div>
 
-        <div className="send-message-btn" onClick={() => addVal()}>
+        <div className="send-message-btn" onClick={() => addMessageValue()}>
           <i className="send-icon" />
         </div>
       </div>

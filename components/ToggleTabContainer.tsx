@@ -1,13 +1,13 @@
 "use client";
-import React from "react";
+import { usePathname } from "next/navigation";
 import ChatList from "@/components/chat-list/ChatList";
 import CallList from "@/components/call-list/CallList";
-import { usePathname } from "next/navigation";
 
 type Props = {
   children?: React.ReactNode;
 };
 
+// this component is to handel tabs
 const ToggleTabContainer = ({ children }: Props): React.ReactNode => {
   const pathname = usePathname();
   return (
